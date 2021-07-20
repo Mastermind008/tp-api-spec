@@ -1,0 +1,40 @@
+#%RAML 1.0
+title: ih-yardi-system-api-copy
+version: 1.0
+description: System API to perform CRUD operations on Yardi objects
+
+
+/alive:
+  description: test operability of source system and test endpoint functional operability.
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+
+/resident:
+  description: get the details of resident from tenant, prospect and other yardi table.
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+  put:
+    body:
+      application/json:
+
+/tenant:
+  description: get the details about the tenant
+  get:    
+    responses:
+      200:
+        body:
+          application/json:
+	  400:
+		body:
+          application/json:
+		   
+  post:
+    body:
+      application/json:
+
